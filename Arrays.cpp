@@ -1,5 +1,5 @@
 //Build Array from Permutation
-class Solution {
+class Array1 {
 public:
     vector<int> buildArray(vector<int>& nums) {
 
@@ -19,7 +19,7 @@ public:
 
 
 //Number of Good Pairs
-class Solution {
+class Array2 {
 public:
     int numIdenticalPairs(vector<int>& nums) {
         int n = nums.size();
@@ -38,7 +38,7 @@ public:
 
 
 //How Many Numbers Are Smaller Than the Current Number
-class Solution {
+class Array3 {
 public:
     vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
         int n = nums.size();
@@ -61,7 +61,7 @@ public:
 
 
 //Count Pairs Whose Sum is Less than Target
-class Solution {
+class Array4 {
 public:
     int countPairs(vector<int>& nums, int target) {
         int n = nums.size();
@@ -80,7 +80,7 @@ public:
 
 
 //Left and Right Sum Differences
-class Solution {
+class Array5 {
 public:
     vector<int> leftRightDifference(vector<int>& nums) {
         int n = nums.size();
