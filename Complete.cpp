@@ -355,7 +355,7 @@ int main() {
             cin >> size;
             cout << "Shkruaj " << size << " numrat e ndare me space: ";
             nums.resize(size);
-            for (int i = 0; i < size; ++i) {
+            for (int i = 0; i < size; i++) {
                 cin >> nums[i];
             }
             vector<int> result = arr1.buildArray(nums);
@@ -376,7 +376,7 @@ int main() {
             cin >> size;
             cout << "Shkruaj " << size << " numrat e ndare me space: ";
             nums.resize(size);
-            for (int i = 0; i < size; ++i) {
+            for (int i = 0; i < size; i++) {
                 cin >> nums[i];
             }
             int result = arr2.numIdenticalPairs(nums);
@@ -393,7 +393,7 @@ int main() {
             cin >> size;
             cout << "Shkruaj " << size << " numrat e ndare me space: ";
             nums.resize(size);
-            for (int i = 0; i < size; ++i) {
+            for (int i = 0; i < size; i++) {
                 cin >> nums[i];
             }
             vector<int> result = arr3.smallerNumbersThanCurrent(nums);
@@ -414,7 +414,7 @@ int main() {
             cin >> size;
             cout << "Shkruaj " << size << " numrat e ndare me space: ";
             nums.resize(size);
-            for (int i = 0; i < size; ++i) {
+            for (int i = 0; i < size; i++) {
                 cin >> nums[i];
             }
             int target;
@@ -434,7 +434,7 @@ int main() {
             cin >> size;
             cout << "Shkruaj " << size << " numrat e ndare me space: ";
             nums.resize(size);
-            for (int i = 0; i < size; ++i) {
+            for (int i = 0; i < size; i++) {
                 cin >> nums[i];
             }
             vector<int> result = arr5.leftRightDifference(nums);
@@ -479,7 +479,7 @@ int main() {
             cin >> size;
             cout << "Shkruaj " << size << " fajle te ndara me space: ";
             words.resize(size);
-            for (int i = 0; i < size; ++i) {
+            for (int i = 0; i < size; i++) {
                 cin >> words[i];
             }
             char x;
@@ -590,8 +590,8 @@ int main() {
             cin >> numCols;
             cout << "Shkruaj elementet e matrices te ndara me space: ";
             accounts.resize(numRows, vector<int>(numCols));
-            for (int i = 0; i < numRows; ++i) {
-                for (int j = 0; j < numCols; ++j) {
+            for (int i = 0; i < numRows; i++) {
+                for (int j = 0; j < numCols; j++) {
                     cin >> accounts[i][j];
                 }
             }
@@ -611,8 +611,8 @@ int main() {
             cin >> numCols;
             cout << "Shkruaj elementet e matrices te ndara me space: ";
             grid.resize(numRows, vector<int>(numCols));
-            for (int i = 0; i < numRows; ++i) {
-                for (int j = 0; j < numCols; ++j) {
+            for (int i = 0; i < numRows; i++) {
+                for (int j = 0; j < numCols; j++) {
                     cin >> grid[i][j];
                 }
             }
@@ -636,8 +636,8 @@ int main() {
             cin >> size;
             cout << "Shkruaj elementet e matrices te ndara me space: ";
             mat.resize(size, vector<int>(size));
-            for (int i = 0; i < size; ++i) {
-                for (int j = 0; j < size; ++j) {
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < size; j++) {
                     cin >> mat[i][j];
                 }
             }
@@ -657,8 +657,8 @@ int main() {
             cin >> numCols;
             cout << "Shkruaj elementet e matrices te ndara me space: ";
             grid.resize(numRows, vector<int>(numCols));
-            for (int i = 0; i < numRows; ++i) {
-                for (int j = 0; j < numCols; ++j) {
+            for (int i = 0; i < numRows; i++) {
+                for (int j = 0; j < numCols; j++) {
                     cin >> grid[i][j];
                 }
             }
@@ -679,8 +679,8 @@ int main() {
             cin >> numCols;
             cout << "Shkruaj elementet e matrices te ndara me space: ";
             image.resize(numRows, vector<int>(numCols));
-            for (int i = 0; i < numRows; ++i) {
-                for (int j = 0; j < numCols; ++j) {
+            for (int i = 0; i < numRows; i++) {
+                for (int j = 0; j < numCols; j++) {
                     cin >> image[i][j];
                 }
             }
@@ -688,16 +688,16 @@ int main() {
             vector<vector<int>> result = mat5.flipAndInvertImage(image);
 
             cout << "Matrica e pandryshuar:" << endl;
-            for (int i = 0; i < numRows; ++i) {
-                for (int j = 0; j < numCols; ++j) {
+            for (int i = 0; i < numRows; i++) {
+                for (int j = 0; j < numCols; j++) {
                     cout << image[i][j] << " ";
                 }
                 cout << endl;
             }
 
             cout << "Matrica e ndryshuar:" << endl;
-            for (int i = 0; i < result.size(); ++i) {
-                for (int j = 0; j < result[i].size(); ++j) {
+            for (int i = 0; i < result.size(); i++) {
+                for (int j = 0; j < result[i].size(); j++) {
                     cout << result[i][j] << " ";
                 }
                 cout << endl;
